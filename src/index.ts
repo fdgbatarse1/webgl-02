@@ -9,6 +9,7 @@ import {
   Color,
   DirectionalLight,
   DirectionalLightHelper,
+  FrontSide,
   Group,
   Mesh,
   MeshStandardMaterial,
@@ -86,6 +87,7 @@ if (isDebug) {
 
 const geometry = new PlaneGeometry();
 const material = new MeshStandardMaterial({ color: 0x8b4513 });
+material.side = FrontSide;
 const floor = new Mesh(geometry, material);
 floor.rotation.x = -Math.PI / 2;
 floor.scale.set(20, 20, 20);
@@ -100,6 +102,7 @@ loader.load("/models/remy.glb", remyGltf => {
   remy.traverse((obj: Object3D) => {
     if (obj instanceof Mesh) {
       obj.castShadow = true;
+      obj.material.side = FrontSide;
     }
   });
 
