@@ -1,61 +1,55 @@
-# vite-vanilla-ts-lib-starter
+# WebGL Homework 02 - 3D Model Scene with Lighting and Shadows
 
-The starter is built on top of Vite 7.x and prepared for writing libraries in TypeScript. It generates a package with support for ESM modules and IIFE.
+## 📹 Demo Video
 
-## Features
+[![Watch the video](/public/images/remy.png)](https://www.loom.com/share/7f197eda5eca4354ae6a3a4083a871a3?sid=c37501ec-b3ea-40bc-b269-b9f720a29dac)
 
-- ESM modules
-- IIFE bundle for direct browser support without bundler
-- Typings bundle
-- ESLint - scripts linter
-- Stylelint - styles linter
-- Prettier - formatter
-- Vitest - test framework
-- Husky + lint-staged - pre-commit git hook set up for formatting
+## 📋 Summary
 
-## GitHub Template
+This project implements a complete Three.js scene with 3D model loading, advanced lighting, and optimized shadows for the WebGL homework assignment:
 
-This is a template repo. Click the green [Use this template](https://github.com/kbysiec/vite-vanilla-ts-lib-starter/generate) button to get started.
+- **Clean working scene** with all previous requirements from Homework 01
+- **3D Model Loading** - GLB model (Remy character)
+- **Advanced Lighting Setup** - Ambient and directional lighting for realistic illumination
+- **Optimized Shadow System** - PCF soft shadows with high-resolution shadow mapping
 
-## Clone to local
+## 🚀 How to Run
 
-If you prefer to do it manually with the cleaner git history
+### Prerequisites
 
-```bash
-git clone https://github.com/kbysiec/vite-vanilla-ts-lib-starter.git
-cd vite-vanilla-ts-lib-starter
-npm i
-```
+- Node.js (version 16 or higher)
+- npm package manager
 
-## Checklist
+### Installation Steps
 
-When you use this template, update the following:
+1. **Clone the repository**
 
-- Remove `.git` directory and run `git init` to clean up the history
-- Change the name in `package.json` - it will be the name of the IIFE bundle global variable and bundle files name (`.mjs`, `.iife.js`, `d.ts`)
-- Change the author name in `LICENSE`
-- Clean up the `README` and `CHANGELOG` files
+   ```bash
+   git clone https://github.com/fdgbatarse1/webgl-02.git
+   cd webgl-02
+   ```
 
-And, enjoy 😊
+2. **Install dependencies**
 
-## Usage
+   ```bash
+   npm install
+   ```
 
-The starter contains the following scripts:
+3. **Start the development server**
 
-- `dev` - starts dev server
-- `build` - generates the following bundles: ESM (`.js`) and IIFE (`.iife.js`). The name of bundle is automatically taken from `package.json` name property
-- `test` - starts vitest and runs all tests
-- `test:coverage` - starts vitest and run all tests with code coverage report
-- `lint:scripts` - lint `.ts` files with eslint
-- `lint:styles` - lint `.css` and `.scss` files with stylelint
-- `format:scripts` - format `.ts`, `.html` and `.json` files with prettier
-- `format:styles` - format `.cs` and `.scss` files with stylelint
-- `format` - format all with prettier and stylelint
-- `prepare` - script for setting up husky pre-commit hook
-- `uninstall-husky` - script for removing husky from repository
+   ```bash
+   npm run dev
+   ```
 
-## Acknowledgment
+4. **Open your browser**
+   - Navigate to `http://localhost:5173` (or the URL shown in your terminal)
+   - You should see an animated 3D character model (Remy from Ratatouille) with realistic lighting and shadows on a brown floor
 
-If you found it useful somehow, I would be grateful if you could leave a star in the project's GitHub repository.
+## 🔗 Links
 
-Thank you.
+- **Repository**: https://github.com/fdgbatarse1/webgl-02
+- **Live Demo**: https://webgl-02.vercel.app/
+
+## 🅭 Credits
+
+"Remy (Ratatouille)" (https://skfb.ly/oFpXo) by Guilherme Navarro is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
